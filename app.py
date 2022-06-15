@@ -11,7 +11,15 @@ URL_BASE2="https://pokeapi.co/api/v2/pokemon-form/"
 def index():
     return render_template("index.html")
 
-@app.route('/movil')
+@app.route('/contact')
+def contacto():
+    return render_template("contact.html")
+
+@app.route('/about')
+def sobre_nosotros():
+    return render_template("about.html")
+
+@app.route('/movil,methods=["POST"]')
 def movil():
     key=os.environ["api_key"]
     print ("Formato valido: pefijo+numero; Ej:34123456789")
@@ -32,7 +40,7 @@ def movil():
         print("Tipo:",doc.get("types")[0].get("type").get("name"))
     else:
         print ("Error, el telefono no es valido")
-        return render_template("movil.html")
+        return render_template("index.html, phone=phone, phone1=phone1")
 
 #port=os.environ["PORT"]
 #app.run("0.0.0.0",int(port),debug=True)
