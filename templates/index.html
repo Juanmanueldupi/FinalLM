@@ -20,8 +20,6 @@
       <link rel="stylesheet" href="../static/css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="../static/css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -76,7 +74,6 @@
                            <ul class="menu-area-main">
                               <li class="active"> <a href="/">Principal</a> </li>
                               <li> <a href="/about">Sobre nosotros</a> </li>
-                              <li> <a href="product.html">Api</a> </li>
                               <li> <a href="/contact">Contacto</a> </li>                               
                            </ul>
                         </nav>
@@ -99,7 +96,7 @@
                   <img class="first-slide" src="../static/images/banner2.jpg" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Tu <br> <strong class="black_bold">Número +</strong><br>
+                        <h1>Tu <br> <strong class="black_bold">Número</strong><br>
                            <strong class="yellow_bold"></strong></h1>
                         <p><br>
                            </p>
@@ -110,7 +107,7 @@
                   <img class="second-slide" src="../static/images/banner2.jpg" alt="Second slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>Tu<br> <strong class="black_bold">Teléfono</strong><br>
+                        <h1>+<br> <strong class="black_bold">Pokefono</strong><br>
                            <strong class="yellow_bold"> </strong></h1>
                         <p> <br>
                            </p>
@@ -121,7 +118,7 @@
                   <img class="third-slide" src="../static/images/banner2.jpg" alt="Third slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1> <br> <strong class="black_bold"> Magía</strong><br>
+                        <h1>= <br> <strong class="black_bold"> Magía</strong><br>
                            <strong class="yellow_bold"> </strong></h1>
                         <p> <br>
                            </p>
@@ -162,14 +159,9 @@
                         <p>
                             <form method="post" action="/movil">
                                 <label>Introduce tu numero de telefono: </label>
-                                <input type="text" name="juego" size="50"/>
-                                <select name="categoria">
-                                  {% for categoria in listacategorias -%}
-                                    <option value="{{categoria}}">{{categoria}}</option>
-                                  {% endfor %}
-                                </select>
+                                <input type="text" name="telf" size="50"/>
                                 <input type="submit" value="Buscar"/> 
-                                <h2>Puedes introducir un videojuego o pulsar buscar para mostrarlos todos según su categoría</h2>
+                                <h2>Formato valido: pefijo + numero; Ej:34123456789</h2>
                             </form>
                         </p>
                     </div>
@@ -258,9 +250,7 @@
               <div class="carousel-caption text-bg">
                <div class="img_bg">
                   <i><img src="../static/images/yo.jpg"/><span>Juan Manuel Durán<br><strong class="date">02/12/1994</strong></span></i>
-                  
                </div>
-                
                 <p>Tremendo friki.<br>
                 Soy un viejoven que se ha enamorado de la informática, en especial de administración de redes, con ganas de adquirir conocimiento. </p>
               </div>
@@ -269,7 +259,6 @@
         </div>
         
       </div>
-
             </div>
          </div>
 
